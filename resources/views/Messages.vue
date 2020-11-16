@@ -190,8 +190,8 @@ export default {
     margin-right: 6px;
   }
   img {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     transform: rotate(180deg);
     filter: invert(21%) sepia(84%) saturate(1809%) hue-rotate(194deg) brightness(94%) contrast(102%);
   }
