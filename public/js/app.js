@@ -21414,7 +21414,7 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 
       if (state.filterNumber !== '') {
         filteredMessages = filteredMessages.filter(function (item) {
-          return item.sender.includes(state.filterNumber);
+          return item.recipient.includes(state.filterNumber);
         });
       }
 

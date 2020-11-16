@@ -36,7 +36,7 @@ export const store = new Vuex.Store({
         getSentMessages (state) {
             let filteredMessages = state.sentMessages
             if (state.filterNumber !== '') {
-                filteredMessages = filteredMessages.filter(item => item.sender.includes(state.filterNumber))
+                filteredMessages = filteredMessages.filter(item => item.recipient.includes(state.filterNumber))
             }
             if (state.filterContent !== '') {
                 filteredMessages = filteredMessages.filter(item => item.content.toLowerCase().includes(state.filterContent.toLowerCase()))
